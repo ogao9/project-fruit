@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Order</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/project_fruit_styles.css">
+    <script src="https://kit.fontawesome.com/3d600189e6.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" defer></script> <!--External JS Mechanism; make sure to include defer-->
+</head>
+
+<body>
+<nav>
+<ul class="navbar">
+    <li><i class="fas fa-seedling" style="font-size:2em; color:rgb(67, 197, 34)"></i></li>
+    <li><a href="project_fruit.html">Home</a></li>
+    <li><a href="catalog.html">Product Catalog</a></li>
+    <li><a href="checkout.html">Order Now</a></li>
+</ul>
+</nav>
+
+<h3>Plan for this page</h3>
+<p>We will have an HTML form that has a select/dropdown menu. Use javascript getDocumentbyId OR Query
+    to figure out what item was chosen. Then we will have a "quiz" that customers can complete to get a 5% discount.
+    Refer to an MDN example on how to "check answers."
+</p>
+
+<div class="order-form">
+    <form action="">
+        <label for="fruit-choice">Choose your fruit:</label>
+        <select name="fruit-choice" id="fruits">
+          <option value="orange">Orange</option>
+          <option value="grapefruit">Grapefruit</option>
+          <option value="apple">Apple</option>
+          <option value="pear">Pear</option>
+        </select> <br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+</div>
+
+
+<div class="flexbox">
+    <div class="quiz">
+        <label for="Q1">At what temperature should you store this fruit?</label>
+        <input type="text" id="Q1">
+        <input type="submit" id="submit">
+        <p id="result"></p>
+    </div>
+    <div class="quiz">
+        <p>Featured Item 2</p>
+
+    </div>
+    <div class="quiz">
+        <p>Featured Item 3</p>
+        
+    </div>
+    <div class="quiz">
+        <p>Featured Item 4</p>
+        
+    </div>
+</div>
+
+
+
+
+
+
+</body>
