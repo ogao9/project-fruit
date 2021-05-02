@@ -11,7 +11,7 @@
 
 <body>
 <nav>
-<ul class="navbar">
+<ul class="navbar" id="TopOfPage">
     <li><i class="fas fa-leaf" style="font-size:2em; color:rgb(67, 197, 34)"></i></li>
     <li><a href="project_fruit.html">Home</a></li>
     <li><a href="learning-center.html">Learning Center</a></li>
@@ -25,7 +25,7 @@
         <h2>Welcome to Fruitcademy, where shopping meets learning.</h2>
     </div>
     <div class="welcome" id="right">
-        <img src="images/fruits.jpg">
+        <img src="images/fruits.jpg" alt="A large variety of fruits">
     </div>
 </div>
 
@@ -38,28 +38,41 @@
 </div>
 
 <!--Featured Items -->
+<h3 style="margin:5% 5% 0">Featured Products</h3>
+<div class="flexbox-feature">
+    <div class="featured">
+        <img src="images/oranges.jpg" alt="An orange">
+    </div>
+    <div class="featured">
+        <img src="images/grapefruit.jpg" alt="A grapefruit"> 
+    </div>
+    <div class="featured">
+        <img src="images/apples.jpg" alt="An apple">
+    </div>
+    <div class="featured">
+        <img src="images/pear.jpg" alt="A pear">
+    </div>
+</div>
+
 <div class="flexbox-feature">
     <div class="featured">
         <p>Navel Oranges</p>
-        <img src="images/oranges.jpg">
         <p>$4.99</p>
     </div>
     <div class="featured">
         <p>Grapefruit</p>
-        <img src="images/grapefruit.jpg">
         <p>$7.99</p>
     </div>
     <div class="featured">
         <p>Apples</p>
-        <img src="images/apples.jpg">
         <p>$2.99</p>
     </div>
     <div class="featured">
         <p>Pears</p>
-        <img src="images/pear.jpg">
         <p>$3.99</p>
     </div>
 </div>
+
 
 <!--Fruit Quick Reference Table-->
 <div class="quick-reference">
@@ -72,16 +85,16 @@
             <th>Quick Tip</th>
         </tr>
         <tr>
-            <td>Fruit</td>
-            <td>Fruit</td>
-            <td>Fruit</td>
-            <td>Fruit</td>
+            <td>Apple</td>
+            <td>Fridge for longevity, room temperature for taste</td>
+            <td>Firm when squeezed</td>
+            <td>Enjoy the small ones whole. Slice up the large ones</td>
         </tr>
         <tr>
-            <td>Fruit</td>
-            <td>Fruit</td>
-            <td>Fruit</td>
-            <td>Fruit</td>
+            <td>Orange</td>
+            <td>Room Temperature for maximum flavor</td>
+            <td>Feels heavy relative to its size</td>
+            <td>Try using a fork or knife to create an opening in the skin. This makes it easier to peel.</td>
         </tr>
     </table>
 </div>
@@ -90,7 +103,7 @@
 <footer>
     <div class="footer">
         <p>This is the footer.</p>
-        <a href=".navbar">Back to Top</a>
+        <a href="#TopOfPage">Back to Top</a>
     </div>
 </footer>
 

@@ -2,10 +2,10 @@
 <html lang="en-US">
 
 <head>
-    <title>Order</title>
+    <title>Order Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/project_fruit_styles.css">
+    <link rel="stylesheet" href="styles/checkout_styles.css">
     <script src="https://kit.fontawesome.com/3d600189e6.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js" defer></script> <!--External JS Mechanism; make sure to include defer-->
 </head>
@@ -23,55 +23,37 @@
 <h3>Plan for this page</h3>
 <ul>
     <li>We will have an HTML form that has a select/dropdown menu.</li>
-    <li>Use javascript getDocumentbyId or Query to figure out what item was chosen.</li>
+    <li>Use javascript getDocumentbyId or querySelector to figure out what item was chosen.</li>
     <li>Then we will have a "quiz" that customers can complete to get a 5% discount on their purchase.</li>
     <li>Refer to an MDN example on how to "check answers."</li>
 </ul>
 
-<div class="order-form">
-    <form action="">
+
+<div>
+    <h3>Test Your Knowledge First</h3>
+    <form class="order-form">
         <label for="fruit-choice">Choose your fruit:</label>
-        <select name="fruit-choice" id="fruits">
-          <option value="orange">Orange</option>
-          <option value="grapefruit">Grapefruit</option>
-          <option value="apple">Apple</option>
-          <option value="pear">Pear</option>
-        </select> <br><br>
+            <select name="fruit-choice" id="fruits">
+                <option value="orange">Orange</option>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="apple">Apple</option>
+                <option value="pear">Pear</option>
+            </select> <br><br>
 
-        <input type="submit" value="Submit">
-      </form>
-</div>
-
-
-<div class="flexbox">
-    <div class="quiz">
         <label for="Q1">At what temperature should you store this fruit?</label>
-        <input type="text" id="Q1">
-        <input type="submit" id="submit">
-        <p id="result"></p>
-    </div>
-    <div class="quiz">
-        <p>Featured Item 2</p>
+            <input type="text" class="Q1">
 
-    </div>
-    <div class="quiz">
-        <p>Featured Item 3</p>
-        
-    </div>
-    <div class="quiz">
-        <p>Featured Item 4</p>
-        
-    </div>
+        <p>Previous Answers: <span class="guesses"></span> </p>
+        <p>Your latest answer was: <span class="result"></span></p>
+        <input type="submit" value="Submit" class="submit">
+    </form>
 </div>
-
-
-
 
 
 <footer>
     <div class="footer">
         <p>This is the footer.</p>
-        <a href=".navbar">Back to Top</a>
+        <a href="#TopOfPage">Back to Top</a>
     </div>
 </footer>
 

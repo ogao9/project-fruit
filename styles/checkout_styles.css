@@ -1,0 +1,81 @@
+/* checkout.html styles */
+body{
+    font-size:100%;
+    font-family: serif;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.navbar{
+    list-style-type: none;
+    background-color: #006f46;
+    padding:0; /*gets rid of space at the beginning of the navbar*/
+    margin:0 0 20px 0; /*only add space to the bottom of the navbar */
+    border:0;
+}
+.navbar li{
+    display: inline-block;
+    padding: 25px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.navbar a:hover{
+    text-decoration: underline white;
+}
+
+
+.footer{
+    background-color: #006f46;
+    font-size: 0.8em;
+    color: white;
+    height: 200px;
+    padding: 25px;
+    margin: 20px 0 0 0;
+}
+
+
+/*-----New Stuff Starts Here-----*/
+
+.order-form{
+    background-color:whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 15px;
+    width: 50%
+}
+
+.order-form select{
+    width: 80%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /*this sets it so that width and height include padding and margins*/
+}
+
+.order-form input[type="submit"]{
+    background-color: olive;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    height: 15%;
+}
+
+.order-form input[type="text"]{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding:5px;
+}
+
+input[type=text]:focus{
+    border: 1px solid lightblue;
+    border-radius:5px;
+}
+

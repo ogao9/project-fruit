@@ -26,9 +26,24 @@
     <li>List in-season information</li>
     <li>Maybe use geolocation API to find farms near you</li>
     <li>Add some form of javascript functionality</li>
+    <li>Create an image map with an image containing all the fruit we sell
+        Clicking on a specific fruit links to the description of that fruit
+    </li>
 </ul>
 
+<!--Currently does not work :(-->
+<p>Click on the fruit you want to learn more about! [Note: Does not work yet] </p>
+<img src="images/fruit-tray.jfif" alt="fruit tray" usemap="fruit-tray" style="width:300px; height:300px" id="test">
+<map name="fruit-tray">  <!--The Map is linked to the image via the name attribute-->
+    <area shape="circle" coords="50,50,100" href="#apple">
+</map>
 
+
+
+
+<h3 id="apple">Apples</h3>
+<h3 id="watermelon">Watermelon</h3>
+<h3 id="strawberry">Strawberries</h3>
 
 
 
