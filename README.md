@@ -1,6 +1,6 @@
 # project-fruit
 
-🍊 A mock fruit-store to practice HTML, CSS, and Javascript. 
+🍊 A mock fruit-store I created to practice HTML, CSS, and Javascript. 
 
 ## Page-layout
 Home \
